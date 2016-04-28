@@ -1,17 +1,16 @@
 function isPal(string) {
-       string = string.toLowerCase();
-       string = string.replace(/\s/g, ''); // remove spaces
-       string = string.replace(/[\.,'-\/#!$%\^&\*;:{}=\-_`~()]/g,"") // remove punctuation
+    string = string.toLowerCase();
+    string = string.replace(/\s/g, ''); // remove spaces
+    string = string.replace(/[\.,'-\/#!$%\^&\*;:{}=\-_`~()]/g, "") // remove punctuation
 
-       var reverse = string.split('').reverse().join('');
+    var reverse = string.split('').reverse().join('');
 
     if (string === reverse) {
-         return true;
-       }
-         else {
-            return false;
-          }
-   };
+        return true;
+    } else {
+        return false;
+    }
+};
 
 console.log(isPal('Anna')); // true
 console.log(isPal('А роза упала на лапу Азора')); //true
