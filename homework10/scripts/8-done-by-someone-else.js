@@ -1,3 +1,5 @@
+// Восьмое задание, решённое Антоном.
+
 function unique(array) {
   var result = [];
   var resultresult = [];
